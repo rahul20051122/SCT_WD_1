@@ -51,9 +51,6 @@ SCT_WD_1/
 
 ![Features Section](features.png)
 
-### Mobile Responsive View
-
-![Mobile View](mobile.png)
 
 ## 🎯 Objectives
 
