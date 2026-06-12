@@ -45,7 +45,7 @@ SCT_WD_1/
 
 ### Navigation Bar
 
-![Navigation Bar](navbar.png)
+![Navigation Bar](Navigationbar.png)
 
 ### Features Section
 
