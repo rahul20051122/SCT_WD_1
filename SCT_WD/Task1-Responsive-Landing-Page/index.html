@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexusFlow - The autonomous AI-powered DevOps and workflow orchestration platform for modern tech teams.">
+  <title>NexusFlow | Autonomous DevOps & Workflow Automation Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo" id="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 32 32">
+          <defs>
+            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#6366f1" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <path d="M16 2 L2 9 L2 23 L16 30 L30 23 L30 9 Z" />
+          <path d="M16 8 L8 12 L8 20 L16 24 L24 20 L24 12 Z" opacity="0.6" />
+          <circle cx="16" cy="16" r="3" fill="#06b6d4" />
+        </svg>
+        <span>NexusFlow</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-btn"><a href="#contact" class="btn btn-secondary">Book Demo</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span></span> Introducing Autonomous Orchestrator v2.4
+        </div>
+        <h1 class="hero-title text-gradient">The Autonomous DevOps Platform</h1>
+        <p class="hero-desc">Orchestrate, scale, and optimize your cloud infrastructure automatically. NexusFlow's AI engine manages your pipelines in real-time, reducing downtime and cutting cloud costs.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Start Deploying Free</a>
+          <a href="#features" class="btn btn-secondary">Explore Features</a>
+        </div>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="hero-mockup-wrapper reveal reveal-delay-2">
+        <div class="hero-mockup">
+          <div class="dashboard">
+            <div class="dashboard-header">
+              <div class="dot-controls">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="dashboard-address">https://console.nexusflow.io/cluster/overview</div>
+              <div style="width: 50px;"></div>
+            </div>
+            <div class="dashboard-body">
+              <!-- Sidebar -->
+              <div class="dash-sidebar">
+                <div class="dash-logo">
+                  <svg width="18" height="18" viewBox="0 0 32 32">
+                    <path d="M16 2 L2 9 L2 23 L16 30 L30 23 L30 9 Z" fill="none" stroke="#6366f1" stroke-width="3" />
+                  </svg>
+                  Console
+                </div>
+                <div class="dash-nav-item active">Overview</div>
+                <div class="dash-nav-item">Pipelines</div>
+                <div class="dash-nav-item">Deployments</div>
+                <div class="dash-nav-item">Cost Optimizer</div>
+                <div class="dash-nav-item">Settings</div>
+              </div>
+              <!-- Main Panel -->
+              <div class="dash-main">
+                <div class="dash-grid-stats">
+                  <div class="dash-stat-card">
+                    <h4>Active Clusters</h4>
+                    <div id="stat-clusters">12 / 12</div>
+                  </div>
+                  <div class="dash-stat-card">
+                    <h4>CPU Utilization</h4>
+                    <div id="stat-cpu">42.8%</div>
+                  </div>
+                  <div class="dash-stat-card">
+                    <h4>Est. Savings (Mo.)</h4>
+                    <div id="stat-savings">$4,185.00</div>
+                  </div>
+                </div>
+                <!-- Interactive Chart Panel -->
+                <div class="dash-chart-container">
+                  <div class="chart-header">
+                    <span class="chart-title">Real-time Traffic Orchestration</span>
+                    <span class="chart-pulse"><span style="width:6px;height:6px;background:#06b6d4;border-radius:50%;display:inline-block;animation:pulse 1s infinite;"></span> Live Optimization</span>
+                  </div>
+                  <div class="chart-visuals" id="chart-bars">
+                    <div class="bar" style="height: 30%;"></div>
+                    <div class="bar" style="height: 45%;"></div>
+                    <div class="bar" style="height: 35%;"></div>
+                    <div class="bar" style="height: 60%;"></div>
+                    <div class="bar" style="height: 75%;"></div>
+                    <div class="bar" style="height: 50%;"></div>
+                    <div class="bar" style="height: 90%;"></div>
+                    <div class="bar" style="height: 65%;"></div>
+                    <div class="bar" style="height: 40%;"></div>
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 85%;"></div>
+                    <div class="bar" style="height: 95%;"></div>
+                  </div>
+                  <!-- Mock pipeline workflow visualization -->
+                  <div class="pipeline-flow">
+                    <div class="pipeline-step success">✓ Fetching Commit</div>
+                    <div class="pipeline-step success">✓ Linting Passed</div>
+                    <div class="pipeline-step active" id="pipeline-current">⚡ AI Code Optimization</div>
+                    <div class="pipeline-step">⚙ Build Target</div>
+                    <div class="pipeline-step">⚙ Deploy Canary</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Powerful Infrastructure</span>
+        <h2 class="section-title text-gradient">Engineered for the Modern Scale</h2>
+        <p>A unified interface and autonomous backend designed to liberate developers from routine ops work.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass reveal">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3>AI Orchestrator</h3>
+          <p>Predictive scheduling and autonomous load management that routes traffic efficiently before bottlenecks even arise.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card glass reveal reveal-delay-1">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.306 7H18m0 0V2.201" />
+            </svg>
+          </div>
+          <h3>Instant Autoscale</h3>
+          <p>Instantly scale compute resources vertically or horizontally to zero-latency demands within milliseconds, not minutes.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card glass reveal reveal-delay-2">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3>Multi-Cloud Mesh</h3>
+          <p>Deploy workloads seamlessly across AWS, Google Cloud, and Azure using a single, unified configuration workspace.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card glass reveal">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3>Cost Optimization</h3>
+          <p>AI scans cluster configurations continuously to downgrade idle nodes and suggest massive cloud savings automatically.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card glass reveal reveal-delay-1">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3>Self-Healing Clusters</h3>
+          <p>Detect failure points, memory leaks, and unresponsive instances instantly, executing auto-rollbacks before users notice.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card glass reveal reveal-delay-2">
+          <div class="feature-icon-container">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3>Enterprise Security</h3>
+          <p>Bank-grade isolation layers, dynamic secret management, and compliance checks embedded into every step of your pipeline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <span class="section-tag">Our Vision</span>
+          <h2>We build infrastructure that runs itself</h2>
+          <p>At NexusFlow, we believe developers shouldn't spend half their lives configuring YAML, scaling clusters, and fixing broken deploys in the middle of the night.</p>
+          <p>Our autonomous DevOps engine operates invisibly in the background. By utilizing telemetry patterns and neural predictive paths, we automate cloud operations completely, letting you focus on the only thing that matters: creating software.</p>
+          <a href="#contact" class="btn btn-primary">Join the Revolution</a>
+        </div>
+        
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-item glass">
+            <div class="stat-number text-gradient" data-target="99.99">0</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+          <div class="stat-item glass">
+            <div class="stat-number text-gradient-cyan" data-target="15">0</div>
+            <div class="stat-label">Min Setup Time</div>
+          </div>
+          <div class="stat-item glass">
+            <div class="stat-number text-gradient-cyan" data-target="75">0</div>
+            <div class="stat-label">% Spend Saved</div>
+          </div>
+          <div class="stat-item glass">
+            <div class="stat-number text-gradient" data-target="10">0</div>
+            <div class="stat-label">M+ Jobs / Day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get Connected</span>
+        <h2 class="section-title text-gradient">Scale Faster, Starting Today</h2>
+        <p>Book a personalized architecture consultation or try NexusFlow for free with your team.</p>
+      </div>
+
+      <div class="contact-wrapper glass reveal">
+        <!-- Contact Left Column (Info) -->
+        <div class="contact-info">
+          <div class="contact-info-top">
+            <h2>Let's talk tech.</h2>
+            <p>Our engineering team can evaluate your current infrastructure configuration and give optimization guidelines.</p>
+            
+            <ul class="contact-info-list">
+              <li class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span>hello@nexusflow.io</span>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 00.096.744L7 9.587a11.952 11.952 0 005.414 5.414l2.2-2.2a1 1 0 00.744-.096l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <span>+1 (800) 555-0199</span>
+              </li>
+              <li class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span>San Francisco, CA</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div style="font-size: 0.8rem; color: var(--text-muted);">
+            © 2026 NexusFlow Inc. All rights reserved.
+          </div>
+        </div>
+
+        <!-- Contact Right Column (Form) -->
+        <div class="contact-form-container">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder=" " required>
+              <label for="name" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder=" " required>
+              <label for="email" class="form-label">Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="company" class="form-input" placeholder=" ">
+              <label for="company" class="form-label">Company Name</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" class="form-input" placeholder=" " required></textarea>
+              <label for="message" class="form-label">How can we help you?</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; border-radius:12px;">Request Access</button>
+            
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 32 32">
+              <path d="M16 2 L2 9 L2 23 L16 30 L30 23 L30 9 Z" fill="none" stroke="url(#logo-grad)" stroke-width="3" />
+            </svg>
+            <span>NexusFlow</span>
+          </a>
+          <p>Automate code deployment, container scaling, and cost efficiency using the power of autonomous engineering.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Links Col 1 -->
+        <div>
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Core Features</a></li>
+            <li><a href="#" class="footer-link">AI Cost Savings</a></li>
+            <li><a href="#" class="footer-link">Integrations</a></li>
+            <li><a href="#" class="footer-link">Pricing Plans</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+          </ul>
+        </div>
+        
+        <!-- Links Col 2 -->
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">API Reference</a></li>
+            <li><a href="#" class="footer-link">Status Monitor</a></li>
+            <li><a href="#" class="footer-link">Community Forum</a></li>
+            <li><a href="#" class="footer-link">Help Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4 class="footer-title">Stay Updated</h4>
+          <p>Get the latest tips on autonomous deployments and cloud optimization straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>
+          © 2026 NexusFlow Inc. Built for modern cloud infrastructure teams.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Trust & Safety</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
